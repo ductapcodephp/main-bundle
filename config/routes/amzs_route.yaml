@@ -1,0 +1,12 @@
+amzs_menu_system:
+  resource: "@AmzsMenuBundle/Resources/config/routes/routes.yaml"
+  type: amzs_menu_route_loader
+amzs_administrator_setting_bundle:
+  resource: "@AmzsSettingBundle/Resources/config/routes/routing.yaml"
+  type: amzs_setting_route_loader
+amzs_administrator_user_bundle:
+  resource: "@AmzsUserBundle/Resources/config/routes/routing.yaml"
+  type: amzs_user_route_loader
+amzs_admin_topic_bundle:
+  resource: "@AmzsTopicBundle/Resources/config/routes/routes.yaml"
+  type: amzs_topic_route_loader

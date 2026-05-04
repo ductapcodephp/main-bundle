@@ -4,14 +4,22 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "doctrine/doctrine-bundle": "^2.13",
-        "doctrine/doctrine-migrations-bundle": "^3.7",
-        "doctrine/orm": "^3.6",
+        "amzs-cms/core-bundle": "1.0.x-dev",
+        "amzs-cms/menu-bundle": "1.0.x-dev",
+        "amzs-cms/setting-bundle": "1.0.x-dev",
+        "amzs-cms/topic-bundle": "dev-main",
+        "amzs-cms/user-bundle": "dev-main",
+        "doctrine/annotations": "^2.0",
+        "doctrine/doctrine-bundle": "^2.10",
+        "doctrine/doctrine-migrations-bundle": "^3.3",
+        "doctrine/orm": "^2.19",
+        "gedmo/doctrine-extensions": "^3.22",
         "phpdocumentor/reflection-docblock": "^6.0",
         "phpstan/phpdoc-parser": "^2.3",
+        "stof/doctrine-extensions-bundle": "^1.13",
         "symfony/asset": "5.4.*",
         "symfony/console": "5.4.*",
         "symfony/doctrine-messenger": "5.4.*",
@@ -91,13 +99,36 @@
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.7",
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "5.4.*",
         "symfony/css-selector": "5.4.*",
         "symfony/debug-bundle": "5.4.*",
         "symfony/maker-bundle": "^1.0",
-        "symfony/phpunit-bridge": "^8.0",
+        "symfony/phpunit-bridge": "^5.4",
         "symfony/stopwatch": "5.4.*",
         "symfony/web-profiler-bundle": "5.4.*"
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../menu-bundle"
+        },
+        {
+            "type": "path",
+            "url": "../core-bundle"
+        },
+        {
+            "type": "path",
+            "url": "../setting-bundle"
+        },
+        {
+            "type": "path",
+            "url": "../user-bundle"
+        },
+        {
+            "type": "path",
+            "url": "../topic-bundle"
+        }
+    ]
 }

@@ -10,13 +10,41 @@ doctrine:
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
+        filters:
+            softdeleteable:
+                class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+                enabled: true
         mappings:
             App:
                 is_bundle: false
+                type: annotation
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
-
+            AmzsMenuBundle:
+                is_bundle: true
+                type: annotation
+                dir: 'Entity'
+                prefix: 'AmzsCMS\MenuBundle\Entity'
+                alias: AmzsMenuBundle
+            AmzsUserBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: 'AmzsCMS\UserBundle\Entity'
+                alias: AmzsUserBundle
+            AmzsTopicBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: 'AmzsCMS\TopicBundle\Entity'
+                alias: AmzsTopicBundle
+            GedmoTranslatable:
+                type: annotation
+                prefix: Gedmo\Translatable\Entity
+                dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Translatable/Entity"
+                alias: GedmoTranslatable
+                is_bundle: false
 when@test:
     doctrine:
         dbal:

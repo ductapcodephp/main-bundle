@@ -10,10 +10,19 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+        cms:
+            pattern: ^/cms
+            lazy: true
+            provider: amzs_user_db
+            logout:
+                path: amzs_user_logout
+                target: amzs_user_login
+            custom_authenticator:
+                - AmzsCMS\UserBundle\Security\UserAuthenticator
+
         main:
             lazy: true
             provider: users_in_memory
-
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
 

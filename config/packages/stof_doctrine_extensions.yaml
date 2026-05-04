@@ -1,0 +1,8 @@
+stof_doctrine_extensions:
+  default_locale: vi
+  orm:
+    default:
+      timestampable: true
+      softdeleteable: true
+      tree: true
+      translatable: true
