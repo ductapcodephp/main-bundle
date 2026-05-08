@@ -1,4 +1,4 @@
 parameters:
   language:
     default: 'vi'
-    locales: ['vi', 'en', 'fr', 'jp']
+    locales: ['vi', 'en',]

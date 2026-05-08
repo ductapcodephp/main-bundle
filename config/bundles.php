@@ -17,6 +17,8 @@ return [
     AmzsCMS\CoreBundle\AmzsCoreBundle::class => ['all' => true],
     AmzsCMS\UserBundle\AmzsUserBundle::class => ['all' => true],
     AmzsCMS\TopicBundle\AmzsTopicBundle::class => ['all' => true],
+    AmzsCMS\ArticleBundle\AmzsArticleBundle::class => ['all' => true],
+    AmzsCMS\PageBundle\AmzsPageBundle::class => ['all' => true],
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
     Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
 ];

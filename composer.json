@@ -7,8 +7,10 @@
         "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "amzs-cms/article-bundle": "dev-main",
         "amzs-cms/core-bundle": "1.0.x-dev",
         "amzs-cms/menu-bundle": "1.0.x-dev",
+        "amzs-cms/page-bundle": "dev-main",
         "amzs-cms/setting-bundle": "1.0.x-dev",
         "amzs-cms/topic-bundle": "dev-main",
         "amzs-cms/user-bundle": "dev-main",
@@ -129,6 +131,14 @@
         {
             "type": "path",
             "url": "../topic-bundle"
+        },
+        {
+            "type": "path",
+            "url": "../article-bundle"
+        },
+        {
+            "type": "path",
+            "url": "../page-bundle"
         }
     ]
 }

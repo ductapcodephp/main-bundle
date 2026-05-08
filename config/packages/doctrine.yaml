@@ -45,6 +45,18 @@ doctrine:
                 dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Translatable/Entity"
                 alias: GedmoTranslatable
                 is_bundle: false
+            AmzsArticleBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: 'AmzsCMS\ArticleBundle\Entity'
+                alias: AmzsArticleBundle
+            AmzsPageBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: 'AmzsCMS\PageBundle\Entity'
+                alias: AmzsPageBundle
 when@test:
     doctrine:
         dbal:

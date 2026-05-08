@@ -10,3 +10,9 @@ amzs_administrator_user_bundle:
 amzs_admin_topic_bundle:
   resource: "@AmzsTopicBundle/Resources/config/routes/routes.yaml"
   type: amzs_topic_route_loader
+amzs_admin_article_bundle:
+  resource: "@AmzsArticleBundle/Resources/config/routes/routes.yaml"
+  type: amzs_article_route_loader
+amzs_admin_page_bundle:
+  resource: "@AmzsPageBundle/Resources/config/routes/routes.yaml"
+  type: amzs_page_route_loader
