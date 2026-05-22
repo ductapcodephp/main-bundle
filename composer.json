@@ -9,6 +9,7 @@
         "ext-iconv": "*",
         "amzs-cms/article-bundle": "dev-main",
         "amzs-cms/core-bundle": "1.0.x-dev",
+        "amzs-cms/gallery-bundle": "dev-main",
         "amzs-cms/menu-bundle": "1.0.x-dev",
         "amzs-cms/page-bundle": "dev-main",
         "amzs-cms/setting-bundle": "1.0.x-dev",
@@ -49,7 +50,8 @@
         "symfony/web-link": "5.4.*",
         "symfony/yaml": "5.4.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/twig": "^2.12|^3.0",
+        "vich/uploader-bundle": "^1.23"
     },
     "config": {
         "allow-plugins": {
@@ -139,6 +141,10 @@
         {
             "type": "path",
             "url": "../page-bundle"
+        },
+        {
+            "type": "path",
+            "url": "../gallery-bundle"
         }
     ]
 }

@@ -57,6 +57,18 @@ doctrine:
                 dir: Entity
                 prefix: 'AmzsCMS\PageBundle\Entity'
                 alias: AmzsPageBundle
+            AmzsGalleryBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: 'AmzsCMS\GalleryBundle\Entity'
+                alias: AmzsGalleryBundle
+            gedmo_tree:
+                type: annotation
+                prefix: Gedmo\Tree\Entity
+                dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Tree/Entity"
+                alias: GedmoTree
+                is_bundle: false
 when@test:
     doctrine:
         dbal:
