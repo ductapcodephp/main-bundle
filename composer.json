@@ -12,6 +12,7 @@
         "amzs-cms/gallery-bundle": "dev-main",
         "amzs-cms/menu-bundle": "1.0.x-dev",
         "amzs-cms/page-bundle": "dev-main",
+        "amzs-cms/block-bundle": "dev-main",
         "amzs-cms/setting-bundle": "1.0.x-dev",
         "amzs-cms/topic-bundle": "dev-main",
         "amzs-cms/user-bundle": "dev-main",
@@ -113,38 +114,46 @@
         "symfony/stopwatch": "5.4.*",
         "symfony/web-profiler-bundle": "5.4.*"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        "0": {
             "type": "path",
             "url": "../menu-bundle"
         },
-        {
+        "1": {
             "type": "path",
             "url": "../core-bundle"
         },
-        {
+        "2": {
             "type": "path",
             "url": "../setting-bundle"
         },
-        {
+        "3": {
             "type": "path",
             "url": "../user-bundle"
         },
-        {
+        "4": {
             "type": "path",
             "url": "../topic-bundle"
         },
-        {
+        "5": {
             "type": "path",
             "url": "../article-bundle"
         },
-        {
-            "type": "path",
-            "url": "../page-bundle"
-        },
-        {
+        "7": {
             "type": "path",
             "url": "../gallery-bundle"
+        },
+        "8": {
+            "type": "path",
+            "url": "../block-bundle"
+        },
+        "9": {
+            "type": "path",
+            "url": "../page-bundle"
         }
-    ]
+    }
 }

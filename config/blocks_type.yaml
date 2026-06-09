@@ -1,0 +1,11 @@
+parameters:
+  blocks_type:
+    #common
+    single_banner_block:
+      name: 'Title page block'
+      backend:
+        view: 'Admin/views/about_overall.html.twig'
+        controller: 'AmzsBlockBundle\Controller\Admin\Block\BlockCommon::edit'
+      frontend:
+#        view: '%themes%block/single_banner.html.twig'
+#        controller: ''

@@ -16,9 +16,9 @@ amzs_admin_article_bundle:
 amzs_admin_page_bundle:
   resource: "@AmzsPageBundle/Resources/config/routes/routes.yaml"
   type: amzs_page_route_loader
-#amzs_admin_picture_bundle:
-#  resource: "@AmzsPictureBundle/Resources/config/routes/picture.yaml"
-#  type: amzs_picture_route_loader
 amzs_admin_gallery_bundle:
   resource: "@AmzsGalleryBundle/Resources/config/routes/gallery.yaml"
   type: amzs_gallery_route_loader
+amzs_admin_block_bundle:
+  resource: "@AmzsBlockBundle/Resources/config/routes/routes.yaml"
+  type: amzs_block_route_loader

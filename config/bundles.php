@@ -19,9 +19,11 @@ return [
     AmzsCMS\TopicBundle\AmzsTopicBundle::class => ['all' => true],
     AmzsCMS\ArticleBundle\AmzsArticleBundle::class => ['all' => true],
     AmzsCMS\PageBundle\AmzsPageBundle::class => ['all' => true],
+    AmzsCMS\BlockBundle\AmzsBlockBundle::class => ['all' => true],
     AmzsCMS\GalleryBundle\AmzsGalleryBundle::class => ['all' => true],
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
     Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
     Vich\UploaderBundle\VichUploaderBundle::class => ['all' => true],
+    FOS\JsRoutingBundle\FOSJsRoutingBundle::class => ['all' => true],
 
 ];

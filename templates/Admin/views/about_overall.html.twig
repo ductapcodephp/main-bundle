@@ -1,0 +1,22 @@
+{% extends 'Admin/views/base.html.twig' %}
+{% block body %}
+<section class="block about_overall" style="position: relative">
+    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <button class="btn btn-sm btn-primary" data-amzs-gallery-modal data-prop="background">Import Background</button>
+        <button class="btn btn-sm btn-secondary" data-amzs-gallery-modal data-prop="mobileBackground">Import Background Mobile</button>
+    </div>
+
+    <div class="container">
+        <div class="heading">
+            <h1 class="title" data-prop="title" contenteditable="true">{{ block.title | default('///Enter title') }}</h1>
+            <h2 class="subtitle" data-prop="subTitle" contenteditable="true">{{ block.subTitle | default('///Enter Subtitle') }}</h2>
+            <div class="text tool-editor" id="showEditorBtn" data-prop="description" data-action="open_ckeditor">
+                {{ block.description | default('///Enter description') | raw }}
+            </div>
+        </div>
+    </div>
+
+    <img class="banner d-block d-lg-none" data-preview-target="mobileBackground" src="{{ asset(block.mobileBackground ?? '') }}" alt="..." />
+    <img class="banner d-none d-lg-block" data-preview-target="background" src="{{ asset(block.background  ?? '') }}" alt="..." />
+</section>
+{% endblock %}
